@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head> </head>
 
-<head>
-</head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
+      </nav>
+    </header>
+    <br />
 
-<body>
-  <header>
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
-    </nav>
-  </header>
+    <main>
+      <form method="post" action="http://127.0.0.1:5500/form.html">
+        <div>
+          <label for="fName">First Name</label><br />
+          <input id="fName" type="text" />
+        </div>
 
-  <main>
-  </main>
+        <div>
+          <label for="lName">Last Name</label><br />
+          <input id="lName" type="text" />
+        </div>
+        <br />
 
-  <footer>Copyright &copy; 2024</footer>
-</body>
+        <div>
+          <input type="radio" id="html" name="fav_lang" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_lang" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_lang"
+            value="Javascript"
+          />
+          <label for="javascript">Javascript</label>
+        </div>
+        <br />
 
+        <div>
+          <input type="checkbox" id="sedan" name="car_type" value="Sedan" />
+          <label for="sedan">Sedan</label><br />
+          <input
+            type="checkbox"
+            id="hatchback"
+            name="car_type"
+            value="Hatchback"
+          />
+          <label for="hatchback">Hatchback</label><br />
+          <input type="checkbox" id="coupe" name="car_type" value="Coupe" />
+          <label for="coupe">Coupe</label>
+        </div>
+        <br />
+
+        <div>
+          <label for="car_brand">Car brand</label><br />
+          <select name="car_brand" id="car_brand">
+            <option value="Holden">Holden</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+          </select>
+        </div>
+        <br />
+
+        <button type="submit">Submit form</button>
+      </form>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
 </html>

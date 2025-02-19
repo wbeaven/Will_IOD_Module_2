@@ -7,17 +7,115 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="William Beaven" />
     <title>Module 2 - Lab 1</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
 
   <body>
     <header>
       <nav>
         <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <h1>Article With Different Elements</h1>
+      <article>
+        <h2>We've got some divs, spans, p, pre, and lists</h2>
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+
+        <span>span 1</span>
+        <span>span 2</span>
+        <span>span 3</span>
+
+        <p>p represents paragraph without preserving spacing</p>
+        <pre>
+        Text in         a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks
+      </pre
+        >
+
+        <ul>
+          <li>unordered list item 1</li>
+          <li>unordered list item 2</li>
+          <li>unordered list item 3</li>
+        </ul>
+
+        <ol>
+          <li>ordered list item 1</li>
+          <li>ordered list item 2</li>
+          <li>ordered list item 3</li>
+          <ol type="i">
+            <li>ordered list nesting 1</li>
+            <li>ordered list nesting 2</li>
+          </ol>
+        </ol>
+      </article>
+
+      <article>
+        <h2>A Table</h2>
+        <table>
+          <tr>
+            <th colspan="2">Names</th>
+            <th>Jobs</th>
+          </tr>
+          <tr>
+            <td>First Name 1</td>
+            <td>Last Name 1</td>
+            <td>Job 1</td>
+          </tr>
+          <tr>
+            <td>First Name 2</td>
+            <td>Last Name 2</td>
+            <td rowspan="2">Job 2</td>
+          </tr>
+          <tr>
+            <td>First Name 3</td>
+            <td>Last Name 3</td>
+          </tr>
+        </table>
+      </article>
+
+      <article>
+        <h2>Image, Video, & Audio</h2>
+        <img
+          src="https://picsum.photos/400/400"
+          alt="An image that is different upon refresh"
+          style="width: 400px; height: 400px"
+        />
+        <br />
+        <img
+          src="assets/html_lab_image.jpg"
+          alt="A sunset view over clouds"
+          style="width: 400px; height: 400px"
+        />
+        <br />
+        <video width="250" controls autoplay muted>
+          <source src="assets/flower.webm" type="video/webm" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <br />
+        <figure>
+          <audio src="assets/t-rex-roar.mp3" controls autoplay muted>
+            Your browser does not support the <code>audio</code> element.
+          </audio>
+          <figcaption>Some audio of a t-rex</figcaption>
+        </figure>
+      </article>
+    </main>
 
     <footer>Copyright &copy; 2024</footer>
   </body>
