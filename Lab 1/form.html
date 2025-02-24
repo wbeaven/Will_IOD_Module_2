@@ -13,7 +13,7 @@
     <br />
 
     <main>
-      <form method="post" action="http://localhost:3000/profile">
+      <form onsubmit="onFormSubmit(event)">
         <div>
           <label for="fName">First Name</label><br />
           <input id="fName" type="text" name="fName" value="First"/>
@@ -71,5 +71,6 @@
     </main>
 
     <footer>Copyright &copy; 2024</footer>
+    <script src="form.js"></script>
   </body>
 </html>
