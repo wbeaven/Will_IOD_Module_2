@@ -41,8 +41,7 @@ a {
 }
 
 .flex-container {
-    display: flexbox;
-    flex-direction: column;
+    display: flex;
 }
 
 .flex-item-1 {
@@ -72,7 +71,7 @@ a {
 
 .flex-basis-item-50 {
     flex-wrap: wrap;
-    flex-basis: 50%;
+    flex-basis: 25%;
 }
 
 .flex-wrap {
@@ -80,6 +79,11 @@ a {
 }
 
 .flex-menu {
-    justify-content: center;
+    justify-content: left;
     flex-grow: 1;
+}
+
+.flex-menu li {
+    list-style-type: none;
+    justify-content: center;
 }
