@@ -3,7 +3,7 @@ function onFormSubmit(e) {
   const formattedObj = getFormattedData(e);
   console.log("formattedObj", formattedObj);
   console.log("Data", getData())
-  fetch("http://localhost:3000/profile", {
+  fetch("http://localhost:3000/posts", {
     method: "POST",
     body: JSON.stringify(formattedObj),
   });
@@ -16,9 +16,9 @@ function getFormattedData(e) {
     "input[type=checkbox][name=car_type]:checked"
   );
   const vals = Array.from(selectedElements).map((e) => e.value);
-  formObj.carType = vals;
+  formObj.car_type = vals;
   return formObj;
-} // car type is doubled up. one is an array and the other is the last selected value.
+}
 
 function getData() {
   const formData = {};

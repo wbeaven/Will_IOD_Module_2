@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": "1877",
+      "fName": "dagdsgds",
+      "lName": "assad",
+      "fav_lang": "HTML",
+      "car_type": "Coupe",
+      "car_brand": "Toyota",
+      "carType": [
+        "Hatchback",
+        "Coupe"
+      ]
+    },
+    {
+      "id": "5085",
+      "fName": "dagdsgds",
+      "lName": "assad",
+      "fav_lang": "HTML",
+      "car_type": "Coupe",
+      "car_brand": "Toyota",
+      "carType": [
+        "Hatchback",
+        "Coupe"
+      ]
+    },
+    {
+      "id": "cb63",
+      "fName": "dagdsgds",
+      "lName": "assad",
+      "fav_lang": "HTML",
+      "car_type": [
+        "Sedan",
+        "Hatchback"
+      ],
+      "car_brand": "Toyota"
+    }
+  ]
+}
